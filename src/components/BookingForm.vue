@@ -28,6 +28,7 @@
                 cancelText="annuler"
                 doneText="valider"
                 v-model="selectedDate"
+                :min="currentDate"
             ></IonDatetime>
         </IonItem>
         <IonItem color="medium">
@@ -56,7 +57,8 @@
                 cgu: false,
                 errorMsg: [],
                 successMsg: null,
-                token: null
+                token: null,
+                currentDate: new Date(Date.now()).toISOString()
             }
         },
         methods: {
