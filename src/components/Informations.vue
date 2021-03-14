@@ -6,9 +6,9 @@
                 <div id="green-btn"></div>
             </IonRow>
         </IonGrid>
-        <p v-if="infos"><span class="text-success">name:~$</span> <span color="light">{{ infos['name'] }}</span></p>
-        <p v-if="infos"><span class="text-success">address:~$</span> <span color="light">{{ infos['address'] }}</span></p>
-        <p v-if="infos"><span class="text-success">description:~$</span> <span color="light">{{ infos['description'] }}</span></p>
+        <p v-if="infos"><span class="text-success">name:~$</span> <span class="light">{{ infos['name'] }}</span></p>
+        <p v-if="infos"><span class="text-success">address:~$</span> <span class="light">{{ infos['address'] }}</span></p>
+        <p v-if="infos"><span class="text-success">description:~$</span> <span class="light">{{ infos['description'] }}</span></p>
     </div>
 </template>
 
@@ -46,5 +46,8 @@ import { IonGrid, IonRow } from '@ionic/vue';
     .text-success {
         color:rgba(52, 211, 153);
         font-weight: bold;
+    }
+    .light {
+        color:#f4f5f8;
     }
 </style>

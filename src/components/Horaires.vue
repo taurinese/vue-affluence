@@ -5,7 +5,7 @@
                 <IonCol>
                     Lundi
                 </IonCol>
-                <IonCol color="light">
+                <IonCol class="light">
                     <span v-if="horaires.Lundi">
                         {{ horaires.Lundi.open }} - {{ horaires.Lundi.close }}
                     </span>
@@ -18,7 +18,7 @@
                 <IonCol>
                     Mardi
                 </IonCol>
-                <IonCol>
+                <IonCol class="light">
                     <span v-if="horaires.Mardi">
                         {{ horaires.Mardi.open }} - {{ horaires.Mardi.close }}
                     </span>
@@ -31,7 +31,7 @@
                 <IonCol>
                     Mercredi
                 </IonCol>
-                <IonCol>
+                <IonCol class="light">
                     <span v-if="horaires.Mercredi">
                         {{ horaires.Mercredi.open }} - {{ horaires.Mercredi.close }}
                     </span>
@@ -44,7 +44,7 @@
                 <IonCol>
                     Jeudi
                 </IonCol>
-                <IonCol>
+                <IonCol class="light">
                     <span v-if="horaires.Jeudi">
                         {{ horaires.Jeudi.open }} - {{ horaires.Jeudi.close }}
                     </span>
@@ -57,7 +57,7 @@
                 <IonCol>
                     Vendredi
                 </IonCol>
-                <IonCol>
+                <IonCol class="light">
                     <span v-if="horaires.Vendredi">
                         {{ horaires.Vendredi.open }} - {{ horaires.Vendredi.close }}
                     </span>
@@ -70,7 +70,7 @@
                 <IonCol>
                     Samedi
                 </IonCol>
-                <IonCol>
+                <IonCol class="light">
                     <span v-if="horaires.Samedi">
                         {{ horaires.Samedi.open }} - {{ horaires.Samedi.close }}
                     </span>
@@ -83,7 +83,7 @@
                 <IonCol>
                     Dimanche
                 </IonCol>
-                <IonCol>
+                <IonCol class="light">
                     <span v-if="horaires.Dimanche">
                         {{ horaires.Dimanche.open }} - {{ horaires.Dimanche.close }}
                     </span>
@@ -118,5 +118,8 @@
     ion-col:first-child{
         font-weight:bold;
         color:rgba(52, 211, 153);
+    }
+    .light {
+        color:#f4f5f8;
     }
 </style>
