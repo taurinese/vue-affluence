@@ -5,7 +5,7 @@
                 <IonCol>
                     Lundi
                 </IonCol>
-                <IonCol>
+                <IonCol color="light">
                     <span v-if="horaires.Lundi">
                         {{ horaires.Lundi.open }} - {{ horaires.Lundi.close }}
                     </span>

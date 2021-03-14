@@ -6,9 +6,9 @@
                 <div id="green-btn"></div>
             </IonRow>
         </IonGrid>
-        <p v-if="infos"><span class="text-success">name:~$</span> {{ infos['name'] }}</p>
-        <p v-if="infos"><span class="text-success">address:~$</span> {{ infos['address'] }}</p>
-        <p v-if="infos"><span class="text-success">description:~$</span> {{ infos['description'] }}</p>
+        <p v-if="infos"><span class="text-success">name:~$</span> <span color="light">{{ infos['name'] }}</span></p>
+        <p v-if="infos"><span class="text-success">address:~$</span> <span color="light">{{ infos['address'] }}</span></p>
+        <p v-if="infos"><span class="text-success">description:~$</span> <span color="light">{{ infos['description'] }}</span></p>
     </div>
 </template>
 
